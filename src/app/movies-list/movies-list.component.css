@@ -1,0 +1,129 @@
+#app {
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+  position: relative;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.headline {
+  text-align: center;
+}
+
+.filter-input {
+  padding: 0.5em;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.add-movie-input {
+  padding: 0.5em;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.filter-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+.filter-list li {
+  background-color: #666;
+  padding: 0.5em;
+  color: #fff;
+  transition: all 0.2s;
+  font-size: 13px;
+}
+
+@media (min-width: 321px) {
+  .filter-list li {
+    font-size: initial;
+  }
+}
+
+.filter-list li:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.filter-list li:hover {
+  background-color: rgb(87, 77, 77);
+  cursor: pointer;
+}
+
+#modal-movie-info {
+  background-color: var(--color-primary);
+  padding: 10px;
+  color: #fff;
+  height: min-content;
+  display: flex;
+  align-items: center;
+}
+
+#modal-movie-info .highlight {
+  font-weight: 700;
+}
+
+.modal-movie-info-inner {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  text-align: left;
+}
+
+#modal-movie-info h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+
+#modal-movie-info h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+#modal-movie-info p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#modal-movie-info a {
+  font-size: 14px;
+  background-color: var(--color-accent);
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+summary {
+  outline: none;
+  font-size: 1.15em;
+  display: flex;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:before {
+  background: var(--color-primary);
+  content: "+";
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  margin: -2px 10px 0 0;
+  padding: 1px 0 3px 0;
+  text-align: center;
+  width: 30px;
+}
+
+details[open] > summary:before {
+  content: "-";
+}

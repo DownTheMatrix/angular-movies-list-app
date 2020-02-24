@@ -1,0 +1,43 @@
+<div class="container">
+  <section id="app" class="movies-info">
+    <h2 class="headline">Movies List</h2>
+
+    <input
+      #addMovieInput
+      [(ngModel)]="searchText"
+      type="text"
+      class="filter-input"
+      placeholder="Filter movies by title..."
+    />
+
+    <ul class="filter-list">
+      <li
+        class="filter-item"
+        *ngFor="let movie of movies | filter: searchText:'title'"
+      >
+        <details>
+          <summary>{{ movie.title }}</summary>
+          <div id="modal-movie-info" #moviesList>
+            <div class="modal-movie-info-inner">
+              <h4>
+                <span class="highlight">Director</span>: {{ movie.director }}
+              </h4>
+              <h5>
+                <span class="highlight">Year</span>: {{ movie.release_year }}
+              </h5>
+              <p>{{ movie.synopsis }}</p>
+              <a
+                href="{{ movie.imdb_url }}"
+                rel="noreferrer noopener"
+                target="_blank"
+                >
+                Learn More <fa-icon [icon]="faExternalLinkAlt">
+                  </fa-icon>
+              </a>
+            </div>
+          </div>
+        </details>
+      </li>
+    </ul>
+  </section>
+</div>
