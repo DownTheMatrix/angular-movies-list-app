@@ -22,6 +22,7 @@
     "@fortawesome/fontawesome-svg-core": "1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "5.12.1",
+    "acorn": "^7.1.1",
     "core-js": "2.6.11",
     "font": "0.0.4",
     "rxjs": "6.5.4",
