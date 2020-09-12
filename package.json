@@ -27,7 +27,7 @@
     "font": "0.0.4",
     "minimist": "^1.2.5",
     "rxjs": "6.5.4",
-    "serialize-javascript": "^3.0.0",
+    "serialize-javascript": "^3.1.0",
     "tslib": "1.11.0",
     "websocket-extensions": "^0.1.4",
     "yargs-parser": "^20.0.0",
