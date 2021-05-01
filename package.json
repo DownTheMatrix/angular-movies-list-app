@@ -29,6 +29,7 @@
     "node-forge": "^0.10.0",
     "rxjs": "6.5.4",
     "serialize-javascript": "^3.1.0",
+    "ssri": "^8.0.1",
     "tslib": "1.11.0",
     "webpack-subresource-integrity": "^1.5.1",
     "websocket-extensions": "^0.1.4",
